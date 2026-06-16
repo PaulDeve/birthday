@@ -24,12 +24,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Controla el flujo de las pantallas en secuencia automática
 function startIntroSequence() {
+  // Mantiene la pantalla inicial visible durante 60 segundos antes de pasar a la escena principal
   setTimeout(() => {
     introStage.classList.remove('active');
     introStage.classList.add('hidden');
     mainStage.classList.remove('hidden');
     mainStage.classList.add('active');
-  }, 2800);
+  }, 3000);
 }
 
 // Crea un efecto de texto revelado letra por letra
@@ -71,7 +72,7 @@ discoverButton.addEventListener('click', () => {
 
   setTimeout(() => {
     showFinalStage();
-  }, 4200);
+  }, 12500); // se mantiene la carta más tiempo para que se lea con calma
 });
 
 // Muestra el mensaje final épico con lluvia de luces
