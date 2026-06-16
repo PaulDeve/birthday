@@ -72,7 +72,7 @@ discoverButton.addEventListener('click', () => {
 
   setTimeout(() => {
     showFinalStage();
-  }, 12500); // se mantiene la carta más tiempo para que se lea con calma
+  }, 21000); // se mantiene la carta más tiempo para que se lea con calma
 });
 
 // Muestra el mensaje final épico con lluvia de luces
