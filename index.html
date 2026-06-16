@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="experience-shell">
+    <div class="background-layer" aria-hidden="true">
+      <div class="bg-glow"></div>
+      <div class="bg-ring bg-ring--left"></div>
+      <div class="bg-ring bg-ring--right"></div>
+      <div class="light-flares">
+        <span class="flare flare--one"></span>
+        <span class="flare flare--two"></span>
+        <span class="flare flare--three"></span>
+      </div>
+      <canvas id="sparkCanvas"></canvas>
+    </div>
+
+    <section class="stage stage--intro active" id="introStage" aria-label="Introducción de cumpleaños">
+      <div class="stage-panel">
+        <p class="intro-text">Para alguien especial…</p>
+      </div>
+    </section>
+
+    <section class="stage stage--main hidden" id="mainStage" aria-label="Pantalla principal de cumpleaños">
+      <div class="stage-panel">
+        <p class="stage-eyebrow">Un momento pensado solo para ti.</p>
+        <h1 class="stage-title" id="mainTitle">
+          <span class="title-line">Feliz</span>
+          <span class="title-line">Cumpleaños</span>
+          <span class="title-line">Danna</span>
+        </h1>
+        <p class="stage-copy" id="mainCopy">Hoy no es un día cualquiera. Hoy celebramos una historia, una sonrisa y todos los momentos que aún están por venir.</p>
+        <button class="action-button" id="discoverButton" type="button">Descubre tu sorpresa</button>
+      </div>
+    </section>
+
+    <section class="stage stage--card hidden" id="cardStage" aria-label="Carta digital de cumpleaños">
+      <div class="stage-panel card-panel">
+        <div class="card-header">
+          <span class="card-star">✨</span>
+          <span class="card-label">Carta digital</span>
+        </div>
+        <div class="card-body">
+          <p>Danna,</p>
+          <p>Que este nuevo año de vida llegue lleno de momentos inolvidables, metas cumplidas y personas que iluminen tus días.</p>
+          <p>Que nunca te falten motivos para sonreír, lugares por descubrir y sueños por construir.</p>
+          <p>Hoy el tiempo se detiene solo un momento para celebrar que existes.</p>
+          <p class="card-signature">Feliz cumpleaños ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage stage--final hidden" id="finalStage" aria-label="Mensaje final épico">
+      <div class="stage-panel final-panel">
+        <p class="final-title">Make this year unforgettable.</p>
+        <p class="final-subtitle">♥ Danna ♥</p>
+      </div>
+    </section>
+
+    <div class="burst-container" id="burstContainer" aria-hidden="true"></div>
+    <div class="heart-floaters" id="heartFloaters" aria-hidden="true">
+      <span class="heart heart--one"></span>
+      <span class="heart heart--two"></span>
+      <span class="heart heart--three"></span>
+      <span class="heart heart--four"></span>
+    </div>
+    <div class="rain-container" id="rainContainer" aria-hidden="true"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
